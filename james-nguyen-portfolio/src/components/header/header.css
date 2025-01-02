@@ -14,7 +14,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: #111111;
+    background: #245a0f;
     height: 100px;
 }
 
@@ -67,7 +67,7 @@ button {
     height: 100px;
     color: white;
     text-decoration: none;
-    background-color: #111111;
+    background-color: #245a0f;
     border: none;
     font-family: "Calibri", serif;
     font-size: 1rem;
@@ -76,6 +76,6 @@ button {
 }
 
 button:hover {
-    color: #D1363A;
+    color: #E68C3A;
     animation: none;
 }
