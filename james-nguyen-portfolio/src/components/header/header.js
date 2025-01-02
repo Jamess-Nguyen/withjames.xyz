@@ -3,6 +3,7 @@ import './header.css';
 
 const Header = () => {
   return (
+    <>
     <header className="header">
       <nav className="header_navigation">
           <div className="header_toggle-button">
@@ -17,6 +18,8 @@ const Header = () => {
           </div>
       </nav>
     </header>
+    <div className="header_spacer"></div>
+    </>
   );
 }
 

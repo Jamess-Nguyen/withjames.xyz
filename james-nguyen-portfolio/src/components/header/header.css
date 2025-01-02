@@ -79,3 +79,7 @@ button:hover {
     color: #E68C3A;
     animation: none;
 }
+
+.header_spacer{
+    height: 100px;
+}
