@@ -27,9 +27,6 @@ function Block() {
 
   return (
     <div className="block">
-      <div className="block-title">
-        <b>PROJECTS</b>
-      </div>
       <div className="block-grid">
         {blocks.map((block) => (
           <div key={block.id} className="block-card" style={{ backgroundImage: `url(${block.image})` }}>
