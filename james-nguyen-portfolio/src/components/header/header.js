@@ -9,13 +9,6 @@ const Header = () => {
           <div className="header_toggle-button">
           </div>
           <div className="header_logo"><a>James Nguyen</a></div>
-          <div className="header_navitems">
-              <ul>
-                <li><button>About</button></li>
-                <li><button>Experience</button></li>
-                <li><button>Projects</button></li>
-              </ul>
-          </div>
       </nav>
     </header>
     <div className="header_spacer"></div>
