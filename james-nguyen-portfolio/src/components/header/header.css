@@ -83,3 +83,13 @@ button:hover {
 .header_spacer{
     height: 100px;
 }
+
+@media screen and (max-width: 1050px) {
+  .header {
+    display: none;
+  }
+
+  .header_spacer {
+    display: none;
+  }
+}
