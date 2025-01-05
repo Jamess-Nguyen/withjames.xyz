@@ -3,6 +3,7 @@
     display: block;
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 .block-title {
@@ -31,7 +32,7 @@
 }
 
 .block-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .block-overlay {

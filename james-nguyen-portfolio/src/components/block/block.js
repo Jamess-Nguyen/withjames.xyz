@@ -23,6 +23,26 @@ function Block() {
       image: "./personalWebsiteBox.jpg",
       alt: "Personal Website",
     },
+    {
+      id: "schedule_bot_9000",
+      title: "Discord User Schedule Bot",
+      description: "Discord.Py bot that stores all user data and outputs it on command",
+      technologies: "Python, Amazon Web Services, Matplotlib, Discord.py, CSV",
+      link: "https://github.com/captnw/DiscordUserScheduleBot",
+      buttonText: "View Git",
+      image: "./boxDiscordBot.jpg",
+      alt: "Discord Bot",
+    },
+    {
+      id: "portfolio",
+      title: "Personal Portfolio Website",
+      description: "Personal Website that chronicles my work as an aspiring fullstack developer",
+      technologies: "React, Github Pages, HTML, CSS, JS",
+      link: "https://github.com/Jamess-Nguyen/portfolioJames",
+      buttonText: "View Git",
+      image: "./personalWebsiteBox.jpg",
+      alt: "Personal Website",
+    },
   ];
 
   return (
