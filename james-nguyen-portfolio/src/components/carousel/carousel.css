@@ -1,0 +1,41 @@
+/* Carousel Container - Centers the carousel and gives it 70% width */
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    /* 70% of the screen width */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Button Styling */
+.button {
+    color: black;
+    margin: 0 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.button.active {
+    color: red;
+    font-weight: bold;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
