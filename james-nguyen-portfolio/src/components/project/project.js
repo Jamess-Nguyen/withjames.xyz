@@ -1,8 +1,8 @@
 import React from 'react';
-import './block.css';
+import './project.css';
 
-function Block() {
-  const blocks = [
+function Project() {
+  const projects = [
     {
       id: "schedule_bot_9000",
       title: "Discord User Schedule Bot",
@@ -46,16 +46,16 @@ function Block() {
   ];
 
   return (
-    <div className="block">
-      <div className="block-grid">
-        {blocks.map((block) => (
-          <div key={block.id} className="block-card" style={{ backgroundImage: `url(${block.image})` }}>
-            <div className="block-overlay">
-              <div className="block-details">
-                <p className="block-description">{block.description}</p>
-                <p className="block-technologies">{block.technologies}</p>
-                <a href={block.link} target="_blank" rel="noopener noreferrer">
-                  <button>{block.buttonText}</button>
+    <div className="project">
+      <div className="project-grid">
+        {projects.map((project) => (
+          <div key={project.id} className="project-card" style={{ backgroundImage: `url(${project.image})` }}>
+            <div className="project-overlay">
+              <div className="project-details">
+                <p className="project-description">{project.description}</p>
+                <p className="project-technologies">{project.technologies}</p>
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <button>{project.buttonText}</button>
                 </a>
               </div>
             </div>
@@ -66,4 +66,4 @@ function Block() {
   );
 }
 
-export default Block;
+export default Project;

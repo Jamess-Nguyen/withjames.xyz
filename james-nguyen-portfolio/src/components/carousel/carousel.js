@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './carousel.css';
-import Block from '../block/block.js';
+import Project from '../project/project.js';
 
 const Carousel = () => {
   const [selected, setSelected] = useState('projects'); 
@@ -13,7 +13,7 @@ const Carousel = () => {
       case 'work':
         return <p>Work Experience Content</p>; 
       case 'projects':
-        return <Block/>
+        return <Project/>
       case 'awards':
         return <p>Awards Content</p>;  
       default:

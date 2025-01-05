@@ -1,26 +1,25 @@
-/* block.css */
-.block {
-    display: block;
+.project {
+    display: project;
     width: 100%;
     margin: 0 auto;
     padding-bottom: 10px;
 }
 
-.block-title {
+.project-title {
     font-size: 3.5em;
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Darker Grotesque', sans-serif;
 }
 
-.block-grid {
+.project-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
 }
 
-.block-card {
+.project-card {
     position: relative;
     width: 500px;
     height: 350px;
@@ -31,11 +30,11 @@
     border-radius: 8px;
 }
 
-.block-card:hover {
+.project-card:hover {
     transform: scale(1.01);
 }
 
-.block-overlay {
+.project-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -51,28 +50,28 @@
     border-radius: 8px;
 }
 
-.block-card:hover .block-overlay {
+.project-card:hover .project-overlay {
     opacity: 1;
 }
 
-.block-details {
+.project-details {
     color: white;
     text-align: center;
     margin-bottom: auto;
 }
 
-.block-description {
+.project-description {
     margin-bottom: 10px;
     font-size: 16px;
 }
 
-.block-technologies {
+.project-technologies {
     margin-bottom: 20px;
     font-size: 14px;
 }
 
 /* Style the link container for the button */
-.block-button-link {
+.project-button-link {
     position: absolute;
     bottom: 20px;
     right: 20px;
