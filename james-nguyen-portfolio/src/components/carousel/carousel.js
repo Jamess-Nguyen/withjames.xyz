@@ -1,6 +1,20 @@
 import React, { useState } from 'react';
 import './carousel.css';
 import Project from '../project/project.js';
+import Card from '../card/card';
+
+const cardData = [
+  {
+    title: { text: 'Project', link: 'https://example.com/another-project' },
+    header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
+    description: 'Blank DESCRIPTION Text CJKLDANSKLDCNASDKLNDCLKDNASKL;'
+  },
+  {
+    title: { text: 'Project', link: 'https://example.com/another-project' },
+    header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
+    description: 'Blank DESCRIPTION Text CJKLDANSKLDCNASDKLNDCLKDNASKL;'
+  },
+];
 
 const Carousel = () => {
   const [selected, setSelected] = useState('projects'); 
@@ -11,7 +25,18 @@ const Carousel = () => {
   const renderContent = () => {
     switch (selected) {
       case 'work':
-        return <p>Work Experience Content</p>; 
+        return (
+          <div>
+            {cardData.map((card, index) => (
+              <Card
+                key={index}
+                title={card.title}
+                header={card.header}
+                description={card.description}
+              />
+            ))}
+          </div>
+        );
       case 'projects':
         return <Project/>
       case 'awards':
