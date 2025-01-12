@@ -37,6 +37,8 @@ const Carousel = () => {
             ))}
           </div>
         );
+      case 'previousprojects':
+        return <p>Previous Projects Content</p>;  
       case 'projects':
         return <Project/>
       case 'awards':
@@ -59,7 +61,13 @@ const Carousel = () => {
           className={`button ${selected === 'projects' ? 'active' : ''}`}
           onClick={() => handleClick('projects')}
         >
-          Projects
+          Ongoing Projects
+        </button>
+        <button
+          className={`button ${selected === 'previousprojects' ? 'active' : ''}`}
+          onClick={() => handleClick('previousprojects')}
+        >
+          Previous Projects
         </button>
         <button
           className={`button ${selected === 'awards' ? 'active' : ''}`}
