@@ -5,12 +5,22 @@ import Card from '../card/card';
 
 const cardData = [
   {
-    title: { text: 'Project', link: 'https://example.com/another-project' },
+    title: { text: 'USC', link: 'https://example.com/another-project' },
     header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
     description: 'Blank DESCRIPTION Text CJKLDANSKLDCNASDKLNDCLKDNASKL;'
   },
   {
-    title: { text: 'Project', link: 'https://example.com/another-project' },
+    title: { text: 'MLB/Tickets.com', link: 'https://example.com/another-project' },
+    header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
+    description: 'Blank DESCRIPTION Text CJKLDANSKLDCNASDKLNDCLKDNASKL;'
+  },
+  {
+    title: { text: 'UCI Graduate Division', link: 'https://example.com/another-project' },
+    header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
+    description: 'Blank DESCRIPTION Text CJKLDANSKLDCNASDKLNDCLKDNASKL;'
+  },
+  {
+    title: { text: 'App Jam+', link: 'https://example.com/another-project' },
     header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
     description: 'Blank DESCRIPTION Text CJKLDANSKLDCNASDKLNDCLKDNASKL;'
   },
