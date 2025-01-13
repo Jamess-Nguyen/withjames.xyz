@@ -7,21 +7,25 @@ const cardData = [
   {
     title: { text: 'USC', link: 'https://example.com/another-project' },
     header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
+    year: '2023-2025',
     description: 'Blank DESCRIPTION Text CJKLDANSKLDCNASDKLNDCLKDNASKL;'
   },
   {
     title: { text: 'MLB/Tickets.com', link: 'https://example.com/another-project' },
     header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
+    year: '2022-2022',
     description: 'Blank DESCRIPTION Text CJKLDANSKLDCNASDKLNDCLKDNASKL;'
   },
   {
     title: { text: 'UCI Graduate Division', link: 'https://example.com/another-project' },
     header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
+    year: '2021-2022',
     description: 'Blank DESCRIPTION Text CJKLDANSKLDCNASDKLNDCLKDNASKL;'
   },
   {
     title: { text: 'App Jam+', link: 'https://example.com/another-project' },
     header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
+    year: '2019-2020',
     description: 'Blank DESCRIPTION Text CJKLDANSKLDCNASDKLNDCLKDNASKL;'
   },
 ];
@@ -43,6 +47,7 @@ const Carousel = () => {
                 title={card.title}
                 header={card.header}
                 description={card.description}
+                year={card.year}
               />
             ))}
           </div>
