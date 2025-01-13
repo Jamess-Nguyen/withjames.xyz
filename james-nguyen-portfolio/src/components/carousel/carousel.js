@@ -26,7 +26,7 @@ const Carousel = () => {
     switch (selected) {
       case 'work':
         return (
-          <div>
+          <div className="card-wrapper">
             {cardData.map((card, index) => (
               <Card
                 key={index}
@@ -40,13 +40,14 @@ const Carousel = () => {
       case 'previousprojects':
         return <p>Previous Projects Content</p>;  
       case 'projects':
-        return <Project/>
+        return <Project />;
       case 'awards':
-        return <p>Awards Content</p>;  
+        return <p>Awards Content</p>;
       default:
         return <p>Work Experience Content</p>;
     }
   };
+
 
   return (
     <div className="carousel-container">
@@ -76,7 +77,7 @@ const Carousel = () => {
           Awards
         </button>
       </div>
-      <div className="content-container">
+      <div>
         {renderContent()}
       </div>
     </div>

@@ -1,19 +1,17 @@
 .carousel-container {
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 100%;
+    max-width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     min-height: 1000px;
     text-align: center;
     padding-top: 20px;
+    background-color: pink;
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-}
 
 .button {
     color: black;
@@ -38,4 +36,11 @@ display: flex;
     justify-content: center;
     text-align: center;
     padding-top: 20px;
+}
+
+.card-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
