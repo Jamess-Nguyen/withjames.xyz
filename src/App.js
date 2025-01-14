@@ -7,9 +7,11 @@ import Carousel from './components/carousel/carousel';
 function App() {
   return (
     <>
-      <Header />
-      <Banner />
-      <Carousel/>
+      <div className='App'>
+        <Header/>
+        <Banner/>
+        <Carousel/>
+      </div>
     </>
   );
 }
