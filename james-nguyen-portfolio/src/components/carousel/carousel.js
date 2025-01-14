@@ -3,7 +3,7 @@ import './carousel.css';
 import Project from '../project/project.js';
 import Card from '../card/card';
 
-const cardData = [
+const workExp = [
   {
     title: { text: 'USC', link: 'https://example.com/another-project' },
     header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
@@ -41,7 +41,7 @@ const Carousel = () => {
       case 'work':
         return (
           <div className="card-wrapper">
-            {cardData.map((card, index) => (
+            {workExp.map((card, index) => (
               <Card
                 key={index}
                 title={card.title}
