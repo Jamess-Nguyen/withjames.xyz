@@ -12,6 +12,13 @@
     background-color: pink;
 }
 
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 .button {
     color: black;
     margin: 0 15px;
