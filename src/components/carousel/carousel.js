@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './carousel.css';
-import Project from '../project/project.js';
 import Card from '../card/card';
 
 const workExp = [
@@ -55,7 +54,19 @@ const Carousel = () => {
       case 'previousprojects':
         return <p>Previous Projects Content</p>;  
       case 'projects':
-        return <Project />;
+        return (
+          <div className="card-wrapper">
+            {workExp.map((card, index) => (
+              <Card
+                key={index}
+                title={card.title}
+                header={card.header}
+                description={card.description}
+                year={card.year}
+              />
+            ))}
+          </div>
+        );
       case 'awards':
         return <p>Awards Content</p>;
       default:

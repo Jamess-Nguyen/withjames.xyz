@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'sans-serif';
   height: 100%;
 }
 
@@ -13,12 +13,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 80%;
   max-width: 1200px;
   height: 55vh;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #FAF8F3;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -26,47 +26,62 @@ body {
 .left-rectangle {
   width: 60%;
   padding: 20px;
+  text-align: left;
 }
 
-.left-rectangle h2 {
-  font-size: 24px;
+.left-rectangle h1 {
+  font-size: 45px;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .left-rectangle p {
   font-size: 16px;
   line-height: 1.6;
+  text-align: left;
   color: #555;
 }
 
 .right-rectangle {
-  width: 45%;
-  padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.image-wrapper {
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-.image-wrapper img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
+.right-rectangle img {
+  width: 300px;
+  height: auto;
 }
 
 .right-rectangle footer {
   font-size: 14px;
   color: #777;
   margin-top: 10px;
+}
+
+.linkedin-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #245a0f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin-button:hover {
+  background-color: #245a0f;
+}
+
+.linkedin-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 @media screen and (max-width: 1050px) {
