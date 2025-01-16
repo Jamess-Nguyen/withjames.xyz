@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
   max-width: 1200px;
   height: 55vh;
   margin: 0 auto;
@@ -62,20 +62,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: #245a0f;
+  background-color: #4C956C;;
   color: white;
   border: none;
-  border-radius: 5px;
-  width: 200px;
-  height: 50px;
+  border-radius: 10px;
+  width: 220px;
+  height: 60px;
   padding: 10px;
   cursor: pointer;
   margin-top: 15px;
-  transition: background-color 0.3s ease;
 }
 
 .linkedin-button:hover {
-  background-color: #245a0f;
+  opacity: 80%;
 }
 
 .linkedin-icon {
