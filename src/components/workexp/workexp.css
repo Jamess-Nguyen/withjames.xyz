@@ -1,0 +1,47 @@
+.work-experience-container {
+    width: 80%;
+    height: 150px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.intro-container {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logos-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 150px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.logo:hover {
+    opacity: 1;
+}
