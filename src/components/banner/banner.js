@@ -10,8 +10,7 @@ const Banner = () => {
         <div className="about-me-wrapper">
             <div className="left-rectangle">
                 <h1>James Nguyen</h1>
-                <p>California based Software Engineer ideating and implementing automated solutions.</p>
-                <p>Sometimes building video games.</p>
+                <p>California based Software Engineer ideating and implementing human-centric full stack solutions </p>
                 <button className="linkedin-button" onClick={openLinkedIn}>
                     Linkedin
                 </button>
