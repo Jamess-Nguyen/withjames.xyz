@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './carousel.css';
 import Card from '../card/card';
 
-const workExp = [
+const ongoingProjects = [
   {
     title: { text: 'Notification Assistant', link: 'https://example.com/another-project' },
     header: 'Monitors web and notifies user when specific metrics are met',
@@ -17,6 +17,54 @@ const workExp = [
   },
 ];
 
+const previousProjects = [
+  {
+    title: { text: 'DIYB0xx', link: 'https://example.com/another-project' },
+    header: 'My Really cool website',
+    year: '2020-Present',
+    description: 'Conceptualized and continually updated to represent my skills and experience as a software engineer.'
+  },
+  {
+    title: { text: 'Schedule Bot 9000', link: 'https://example.com/another-project' },
+    header: 'Monitors web and notifies user when specific metrics are met',
+    year: '2024-Present',
+    description: 'Initially designed to get free Chick-fil-A this bot has been scaled to notify me based on lambda monitors.'
+  },
+  {
+    title: { text: 'Quizify', link: 'https://example.com/another-project' },
+    header: 'My Really cool website',
+    year: '2020-Present',
+    description: 'Conceptualized and continually updated to represent my skills and experience as a software engineer.'
+  },
+  {
+    title: { text: 'John Jumper', link: 'https://example.com/another-project' },
+    header: 'My Really cool website',
+    year: '2020-Present',
+    description: 'Conceptualized and continually updated to represent my skills and experience as a software engineer.'
+  },
+  {
+    title: { text: 'Jamestagram', link: 'https://example.com/another-project' },
+    header: 'My Really cool website',
+    year: '2020-Present',
+    description: 'Conceptualized and continually updated to represent my skills and experience as a software engineer.'
+  },
+];
+
+const awards = [
+  {
+    title: { text: 'CUNA Diamond Awards', link: 'https://example.com/another-project' },
+    header: 'Monitors web and notifies user when specific metrics are met',
+    year: '2024-Present',
+    description: 'Initially designed to get free Chick-fil-A this bot has been scaled to notify me based on lambda monitors.'
+  },
+  {
+    title: { text: 'Bricksmith', link: 'https://example.com/another-project' },
+    header: 'Monitors web and notifies user when specific metrics are met',
+    year: '2024-Present',
+    description: 'Initially designed to get free Chick-fil-A this bot has been scaled to notify me based on lambda monitors.'
+  },
+];
+
 const Carousel = () => {
   const [selected, setSelected] = useState('projects'); 
   const handleClick = (section) => {
@@ -26,11 +74,23 @@ const Carousel = () => {
   const renderContent = () => {
     switch (selected) {
       case 'previousprojects':
-        return <p>Previous Projects Content</p>;  
+        return (
+          <div className="card-wrapper">
+            {previousProjects.map((card, index) => (
+              <Card
+                key={index}
+                title={card.title}
+                header={card.header}
+                description={card.description}
+                year={card.year}
+              />
+            ))}
+          </div>
+        );
       case 'projects':
         return (
           <div className="card-wrapper">
-            {workExp.map((card, index) => (
+            {ongoingProjects.map((card, index) => (
               <Card
                 key={index}
                 title={card.title}
@@ -42,9 +102,19 @@ const Carousel = () => {
           </div>
         );
       case 'awards':
-        return <p>Awards Content</p>;
-      default:
-        return <p>Work Experience Content</p>;
+        return (
+          <div className="card-wrapper">
+            {awards.map((card, index) => (
+              <Card
+                key={index}
+                title={card.title}
+                header={card.header}
+                description={card.description}
+                year={card.year}
+              />
+            ))}
+          </div>
+        );
     }
   };
 
