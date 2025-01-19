@@ -12,7 +12,7 @@ const Banner = () => {
                 <h1>James Nguyen</h1>
                 <p>California based Software Engineer ideating and implementing human-centric full stack solutions </p>
                 <button className="linkedin-button" onClick={openLinkedIn}>
-                    Linkedin
+                    Connect On LinkedIn
                 </button>
             </div>
 
