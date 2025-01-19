@@ -13,7 +13,6 @@ const Card = ({ title, header, description, year }) => {
         <span className="year">{year}</span> 
       </h2>
       <p>{description}</p>
-      <hr />
     </div>
   );
 };

@@ -37,20 +37,6 @@ const Carousel = () => {
 
   const renderContent = () => {
     switch (selected) {
-      case 'work':
-        return (
-          <div className="card-wrapper">
-            {workExp.map((card, index) => (
-              <Card
-                key={index}
-                title={card.title}
-                header={card.header}
-                description={card.description}
-                year={card.year}
-              />
-            ))}
-          </div>
-        );
       case 'previousprojects':
         return <p>Previous Projects Content</p>;  
       case 'projects':
@@ -78,12 +64,6 @@ const Carousel = () => {
   return (
     <div className="carousel-container">
       <div className="button-container">
-        <button
-          className={`button ${selected === 'work' ? 'active' : ''}`}
-          onClick={() => handleClick('work')}
-        >
-          Work Experience
-        </button>
         <button
           className={`button ${selected === 'projects' ? 'active' : ''}`}
           onClick={() => handleClick('projects')}
