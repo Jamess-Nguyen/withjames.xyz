@@ -4,28 +4,16 @@ import Card from '../card/card';
 
 const workExp = [
   {
-    title: { text: 'USC', link: 'https://example.com/another-project' },
-    header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
-    year: '2023-2025',
-    description: 'Blank DESCRIPTION Text CJKLDANSKLDCNASDKLNDCLKDNASKL;'
+    title: { text: 'Notification Assistant', link: 'https://example.com/another-project' },
+    header: 'Monitors web and notifies user when specific metrics are met',
+    year: '2024-Present',
+    description: 'Initially designed to get free Chick-fil-A this bot has been scaled to notify me based on lambda monitors.'
   },
   {
-    title: { text: 'MLB/Tickets.com', link: 'https://example.com/another-project' },
-    header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
-    year: '2022-2022',
-    description: 'Blank DESCRIPTION Text CJKLDANSKLDCNASDKLNDCLKDNASKL;'
-  },
-  {
-    title: { text: 'UCI Graduate Division', link: 'https://example.com/another-project' },
-    header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
-    year: '2021-2022',
-    description: 'Blank DESCRIPTION Text CJKLDANSKLDCNASDKLNDCLKDNASKL;'
-  },
-  {
-    title: { text: 'App Jam+', link: 'https://example.com/another-project' },
-    header: 'Blank Header Text CJKLDANSKLDCNASDKLNDCLKDNASKL;',
-    year: '2019-2020',
-    description: 'Blank DESCRIPTION Text CJKLDANSKLDCNASDKLNDCLKDNASKL;'
+    title: { text: 'Personal Portfolio', link: 'https://example.com/another-project' },
+    header: 'My Really cool website',
+    year: '2020-Present',
+    description: 'Conceptualized and continually updated to represent my skills and experience as a software engineer.'
   },
 ];
 

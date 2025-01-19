@@ -8,7 +8,7 @@ body {
   align-items: center;
   width: 80%;
   max-width: 1200px;
-  height: 55vh;
+  height: 50vh;
   margin: 0 auto;
   background-color: #FAF8F3;
   border-radius: 10px;
@@ -44,12 +44,7 @@ body {
 .right-rectangle img {
   width: 300px;
   height: auto;
-}
-
-.right-rectangle footer {
-  font-size: 14px;
-  color: #777;
-  margin-top: 10px;
+  border-radius: 100px;
 }
 
 .linkedin-button {
@@ -109,7 +104,6 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 15px;
-    padding-bottom: 10px;
   }
 
   .right-rectangle img {
