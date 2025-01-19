@@ -16,7 +16,7 @@ body {
 }
 
 .left-rectangle {
-  width: 70%;
+  width: 65%;
   text-align: left;
   display: flex;
   flex-direction: column;

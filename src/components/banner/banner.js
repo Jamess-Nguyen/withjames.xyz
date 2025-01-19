@@ -1,5 +1,6 @@
 import React from 'react';
 import './banner.css'; 
+import pfp from '../../assets/pfp.png'
 
 const Banner = () => {
     const openLinkedIn = () => {
@@ -10,14 +11,14 @@ const Banner = () => {
         <div className="about-me-wrapper">
             <div className="left-rectangle">
                 <h1>James Nguyen</h1>
-                <p>California based Software Engineer ideating and implementing human-centric full stack solutions </p>
+                <p>California based Software Engineer ideating and implementing humancentric full stack solutions.</p>
                 <button className="linkedin-button" onClick={openLinkedIn}>
                     Connect On LinkedIn
                 </button>
             </div>
 
             <div className="right-rectangle">
-                <img src="https://via.placeholder.com/300" alt="Profile" />
+                <img src={pfp} alt="Profile" />
             </div>
         </div>       
     );

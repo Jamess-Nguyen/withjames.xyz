@@ -1,6 +1,9 @@
 import React from 'react';
 import './workexp.css';
-import logo192 from '../../assets/logo192.png'
+import USC from '../../assets/USC.png'
+import MLB from '../../assets/MLB.png'
+import UCI from '../../assets/UCI.png'
+import dreams4schools from '../../assets/dreams4schools.png'
 
 const Workexp = () => {
   return (
@@ -10,16 +13,16 @@ const Workexp = () => {
         </div>
       <div className="logos-row">
         <div className="logo-container">
-          <img src={logo192} alt="USC" className="logo" />
+          <img src={USC} alt="USC" className="logo" />
         </div>
         <div className="logo-container">
-          <img src={logo192} alt="MLB" className="logo" />
+          <img src={MLB} alt="MLB" className="logo" />
         </div>
         <div className="logo-container">
-          <img src={logo192} alt="UCI" className="logo" />
+          <img src={UCI} alt="UCI" className="logo" />
         </div>
         <div className="logo-container">
-          <img src={logo192} alt="AppJam+" className="logo" />
+          <img src={dreams4schools} alt="AppJam+" className="logo" />
         </div>
       </div>
     </div>
