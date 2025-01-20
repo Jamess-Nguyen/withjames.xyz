@@ -1,4 +1,4 @@
-# jamesnguyen.xyz
+# withjames.xyz
 
 My personal portfolio website to showcase my expeirence, skills, and aspirations
 
