@@ -9,7 +9,7 @@ const Workexp = () => {
   return (
     <div className="work-experience-container">
         <div className="intro-container">
-            <p className="work-intro">Where I've Worked:</p>
+            <p className="work-intro">Where I've Worked</p>
         </div>
       <div className="logos-row">
         <div className="logo-container">
