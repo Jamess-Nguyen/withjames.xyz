@@ -1,6 +1,6 @@
 import React from 'react';
 import './banner.css'; 
-import pfp from '../../assets/pfp.png'
+import pfp from '../../assets/pfp.png';
 
 const Banner = () => {
     const openLinkedIn = () => {
@@ -10,7 +10,7 @@ const Banner = () => {
     return (
         <div className="about-me-wrapper">
             <div className="left-rectangle">
-                <h1>James Nguyen</h1>
+                <h1 className="name-header">James Nguyen</h1>
                 <p>California based Software Engineer ideating and implementing humancentric full stack solutions. Starting my programming career in elementry school (2008)- I aim to build technology that makes life a little easier.</p>
                 <button className="linkedin-button" onClick={openLinkedIn}>
                     Connect On LinkedIn
@@ -20,9 +20,8 @@ const Banner = () => {
             <div className="right-rectangle">
                 <img src={pfp} alt="Profile" />
             </div>
-        </div>       
+        </div>
     );
-
 }
 
-export default Banner
+export default Banner;
