@@ -1,6 +1,6 @@
 import React from 'react';
 import './banner.css'; 
-import pfp from '../../assets/pfp.png';
+import pfp from '../../assets/pfp.png'
 
 const Banner = () => {
     const openLinkedIn = () => {
@@ -20,8 +20,9 @@ const Banner = () => {
             <div className="right-rectangle">
                 <img src={pfp} alt="Profile" />
             </div>
-        </div>
+        </div>       
     );
+
 }
 
-export default Banner;
+export default Banner
