@@ -1,6 +1,6 @@
 # withjames.xyz
 
-My personal portfolio website to showcase my expeirence, skills, and aspirations
+My personal portfolio website to showcase my expeirence, skills, and aspirations. Hosted on github servers cause it's free :cool:
 
 # Built With
 
