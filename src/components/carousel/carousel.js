@@ -4,14 +4,14 @@ import Card from '../card/card';
 
 const ongoingProjects = [
   {
-    title: { text: 'Notification Assistant', link: 'https://github.com/Jamess-Nguyen' },
-    header: 'Monitors web and notifies user when specific metrics are met',
-    description: 'Initially designed to get free Chick-fil-A this bot has been scaled to notify me based on lambda monitors.'
+    title: { text: 'ILoveLebron.xyz', link: 'https://github.com/Jamess-Nguyen/ILoveLebron/' },
+    header: 'Lebron James Fan Club',
+    description: "Full-stack project to highlight Lebron James' career (React/Django)."
   },
   {
-    title: { text: 'Digital Swirl Engine', link: 'https://github.com/Jamess-Nguyen/DigitalSwirl-Roblox/' },
-    header: 'Game Engine',
-    description: 'Sonic the hedgehog physics engine.'
+    title: { text: "Dont Look", link: 'https://roblox.com' },
+    header: 'Roblox Game',
+    description: 'Video game based on Medusa of Greek Mythology'
   },
   {
     title: { text: 'Personal Portfolio', link: 'https://example.com/another-project' },
@@ -22,8 +22,13 @@ const ongoingProjects = [
 
 const previousProjects = [
   {
-    title: { text: 'DIYB0xx-Microcontroller', link: 'https://www.youtube.com/watch?v=OekrLlLfaII&ab_channel=JamerGamer'},
-    header: 'Video Game Controller (Game Cube)',
+    title: { text: 'Chick-fil-a Bot', link: 'https://github.com/Jamess-Nguyen' },
+    header: 'Monitors baseball stats and notifies user when specific metrics are met',
+    description: 'Initially designed to get free Chick-fil-A this bot has been scaled to notify me based on passed in lambda monitors.'
+  },
+  {
+    title: { text: 'DIYB0xx-Microcontroller', link: 'https://www.youtube.com/watch?v=OekrLlLfaII&ab_channel=JamerGamer' },
+    header: 'Video Game Controller (Gamecube)',
     description: 'Designed, built, and documented flat-keyboard version of Game cube controller to help players with hand pain play Super Smash Bros Melee.'
   },
   {
@@ -57,7 +62,7 @@ const awards = [
 ];
 
 const Carousel = () => {
-  const [selected, setSelected] = useState('projects'); 
+  const [selected, setSelected] = useState('projects');
   const handleClick = (section) => {
     setSelected(section);
   };
