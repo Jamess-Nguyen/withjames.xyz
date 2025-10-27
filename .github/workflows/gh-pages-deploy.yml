@@ -6,7 +6,6 @@ on:
     paths:
       - "src/**"
       - ".github/**"
-      - "package.json"
 
 permissions:
   contents: write
@@ -14,7 +13,6 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,22 +23,15 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Install deps (CI)
+      - name: Install deps
         run: npm ci
 
-      - name: Patch warnings (optional but helps)
+      - name: Configure Git identity
         run: |
-          npx update-browserslist-db@latest || true
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
 
-      - name: Ensure Babel plugin present
-        run: npm i -D @babel/plugin-proposal-private-property-in-object
-
-      - name: Build
-        run: npm run build
-        env:
-          CI: true
-
-      - name: Deploy via gh-pages
+      - name: Deploy via gh-pages CLI
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run deploy
