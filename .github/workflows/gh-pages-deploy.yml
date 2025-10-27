@@ -6,6 +6,7 @@ on:
     paths:
       - "src/**"
       - ".github/**"
+      - "package.json"
 
 permissions:
   contents: write
