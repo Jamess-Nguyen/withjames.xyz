@@ -16,8 +16,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v3
+      - name: Setup npm
+        uses: npm/action-setup@v3
         with:
           version: 9
 
@@ -25,15 +25,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
+          cache: 'npm'
 
       - name: Allow postinstall/build scripts
-        run: pnpm config set ignore-scripts false
+        run: npm config set ignore-scripts false
 
       - name: Install deps
-        run: pnpm install --frozen-lockfile
+        run: npm install --frozen-lockfile
 
       - name: Deploy via gh-pages CLI
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: pnpm run deploy
+        run: npm run deploy
