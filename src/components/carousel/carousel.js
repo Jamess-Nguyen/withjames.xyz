@@ -4,23 +4,33 @@ import Card from '../card/card';
 
 const ongoingProjects = [
   {
+    title: { text: 'NoteRacer.io', link: 'https://noteracer.io' },
+    header: 'Type Racer, but with music notes!',
+    description: "Gamified way to learn site reading quickly (Next.js)"
+  },
+  {
     title: { text: 'ILoveLebron.xyz', link: 'https://github.com/Jamess-Nguyen/ILoveLebron/' },
     header: 'Lebron James Fan Club',
-    description: "Full-stack project to highlight Lebron James' career (React/Django)."
+    description: "Site to highlight Lebron James' career (Vite React)"
+  },
+  {
+    title: { text: 'WithJames.xyz', link: 'https://example.com/another-project' },
+    header: 'My Really cool website',
+    description: 'Conceptualized and continually updated to represent my skills and experience as a software engineer (Vite React)'
+  },
+];
+
+const previousProjects = [
+  {
+    title: { text: 'Dating App Bot', link: 'https://github.com/Jamess-Nguyen' },
+    header: 'Automation script that swipes on dating apps for me',
+    description: 'I did not find love'
   },
   {
     title: { text: "Dont Look", link: 'https://roblox.com' },
     header: 'Roblox Game',
     description: 'Video game based on Medusa of Greek Mythology'
   },
-  {
-    title: { text: 'Personal Portfolio', link: 'https://example.com/another-project' },
-    header: 'My Really cool website',
-    description: 'Conceptualized and continually updated to represent my skills and experience as a software engineer.'
-  },
-];
-
-const previousProjects = [
   {
     title: { text: 'Chick-fil-a Bot', link: 'https://github.com/Jamess-Nguyen' },
     header: 'Monitors baseball stats and notifies user when specific metrics are met',
@@ -46,6 +56,7 @@ const previousProjects = [
     header: 'Spotify Based Web Game',
     description: 'Randomly picks a song from players spotify play list and quizzes them.'
   },
+
 ];
 
 const awards = [
