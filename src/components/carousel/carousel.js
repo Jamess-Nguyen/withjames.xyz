@@ -122,6 +122,8 @@ const Carousel = () => {
             ))}
           </div>
         );
+      default:
+        return null;
     }
   };
 
